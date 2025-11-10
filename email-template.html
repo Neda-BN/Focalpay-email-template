@@ -25,15 +25,35 @@
         a {
             text-decoration: none;
         }
+        
+        /* Responsive styles */
+        @media only screen and (max-width: 640px) {
+            .wrapper {
+                padding: 20px !important;
+            }
+            .content-table {
+                width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+            h2 {
+                font-size: 16px !important;
+            }
+            .promo-title {
+                font-size: 20px !important;
+            }
+        }
     </style>
 </head>
 <body style="margin: 0; padding: 0; background-color: #1a1a1a;">
     <!-- Main Container -->
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #1a1a1a;">
         <tr>
-            <td align="center" style="padding: 0;">
+            <td align="center" class="wrapper" style="padding: 48px;">
                 <!-- Content Table -->
-                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width: 600px; width: 100%; background-color: #1a1a1a;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="content-table" style="max-width: 600px; width: 100%; background-color: #1a1a1a;">
                     
                     <!-- Header with Logo -->
                     <tr>
@@ -46,7 +66,7 @@
                          NEWS ARTICLE 1 - UPDATE WEEKLY
                          ======================================== -->
                     <tr>
-                        <td style="padding: 30px 20px 10px 20px; background-color: #1a1a1a;">
+                        <td class="mobile-padding" style="padding: 30px 20px 10px 20px; background-color: #1a1a1a;">
                             <!-- ARTICLE 1 TITLE: Replace text below -->
                             <h2 style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 800; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.4;">
                                 <a href="https://www.breakit.se/artikel/44171/sa-forandrar-ai-era-kunders-shopping-pa-natet-och-sa-maste-ni-anpassa-er" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">How AI is Transforming Your Customers' Online Shopping</a>
@@ -54,7 +74,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 0 20px 20px 20px; background-color: #1a1a1a;">
+                        <td class="mobile-padding" style="padding: 0 20px 20px 20px; background-color: #1a1a1a;">
                             <!-- ARTICLE 1 IMAGE: Clickable, opens same URL -->
                             <a href="https://www.breakit.se/artikel/44171/sa-forandrar-ai-era-kunders-shopping-pa-natet-och-sa-maste-ni-anpassa-er" target="_blank" rel="noopener noreferrer" style="display: block;">
                                 <img src="https://raw.githubusercontent.com/Neda-BN/Focalpay-email-template/main/News1.png" alt="AI transforming online shopping" width="560" style="width: 100%; max-width: 560px; height: auto; border-radius: 15px; display: block;">
@@ -62,7 +82,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 0 20px 20px 20px; background-color: #1a1a1a;">
+                        <td class="mobile-padding" style="padding: 0 20px 20px 20px; background-color: #1a1a1a;">
                             <!-- ARTICLE 1 DESCRIPTION: Replace text below (1-3 sentences) -->
                             <p style="margin: 0 0 15px 0; color: #b8b8b8; font-size: 13px; font-weight: 400; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6;">
                                 Artificial intelligence is revolutionizing how customers shop online, creating new expectations and behaviors. Discover how AI is changing the e-commerce landscape and what businesses need to do to adapt and stay competitive in this rapidly evolving digital marketplace.
@@ -78,7 +98,7 @@
                          NEWS ARTICLE 2 - UPDATE WEEKLY
                          ======================================== -->
                     <tr>
-                        <td style="padding: 30px 20px 10px 20px; background-color: #1a1a1a;">
+                        <td class="mobile-padding" style="padding: 30px 20px 10px 20px; background-color: #1a1a1a;">
                             <!-- ARTICLE 2 TITLE: Replace text below -->
                             <h2 style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 800; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.4;">
                                 <a href="https://www.breakit.se/artikel/39008/ingen-anledning-till-oro-ai-ar-an-sa-lange-for-dyrt-for-att-ersatta-mansklig-arbetskraft" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">No Need to Worry: AI Still Too Expensive to Replace Human Workers</a>
@@ -86,7 +106,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 0 20px 20px 20px; background-color: #1a1a1a;">
+                        <td class="mobile-padding" style="padding: 0 20px 20px 20px; background-color: #1a1a1a;">
                             <!-- ARTICLE 2 IMAGE: Clickable, opens same URL -->
                             <a href="https://www.breakit.se/artikel/39008/ingen-anledning-till-oro-ai-ar-an-sa-lange-for-dyrt-for-att-ersatta-mansklig-arbetskraft" target="_blank" rel="noopener noreferrer" style="display: block;">
                                 <img src="https://raw.githubusercontent.com/Neda-BN/Focalpay-email-template/main/News2.png" alt="AI costs vs human labor" width="560" style="width: 100%; max-width: 560px; height: auto; border-radius: 15px; display: block;">
@@ -94,7 +114,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 0 20px 20px 20px; background-color: #1a1a1a;">
+                        <td class="mobile-padding" style="padding: 0 20px 20px 20px; background-color: #1a1a1a;">
                             <!-- ARTICLE 2 DESCRIPTION: Replace text below (1-3 sentences) -->
                             <p style="margin: 0 0 15px 0; color: #b8b8b8; font-size: 13px; font-weight: 400; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6;">
                                 Despite concerns about AI replacing jobs, the technology remains far too costly to substitute human workers in most industries. New analysis shows that the economic viability of AI automation is still years away, providing reassurance for the workforce during this technological transition.
@@ -110,7 +130,7 @@
                          NEWS ARTICLE 3 - UPDATE WEEKLY
                          ======================================== -->
                     <tr>
-                        <td style="padding: 30px 20px 10px 20px; background-color: #1a1a1a;">
+                        <td class="mobile-padding" style="padding: 30px 20px 10px 20px; background-color: #1a1a1a;">
                             <!-- ARTICLE 3 TITLE: Replace text below -->
                             <h2 style="margin: 0 0 20px 0; color: #ffffff; font-size: 18px; font-weight: 800; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.4;">
                                 <a href="https://www.breakit.se/artikel/35199/onsdag-30-november-detta-hander-idag" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Today's Tech Highlights: What's Happening in Swedish Business</a>
@@ -118,7 +138,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 0 20px 20px 20px; background-color: #1a1a1a;">
+                        <td class="mobile-padding" style="padding: 0 20px 20px 20px; background-color: #1a1a1a;">
                             <!-- ARTICLE 3 IMAGE: Clickable, opens same URL -->
                             <a href="https://www.breakit.se/artikel/35199/onsdag-30-november-detta-hander-idag" target="_blank" rel="noopener noreferrer" style="display: block;">
                                 <img src="https://raw.githubusercontent.com/Neda-BN/Focalpay-email-template/main/News3.png" alt="Today's tech news highlights" width="560" style="width: 100%; max-width: 560px; height: auto; border-radius: 15px; display: block;">
@@ -126,7 +146,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 0 20px 40px 20px; background-color: #1a1a1a;">
+                        <td class="mobile-padding" style="padding: 0 20px 40px 20px; background-color: #1a1a1a;">
                             <!-- ARTICLE 3 DESCRIPTION: Replace text below (1-3 sentences) -->
                             <p style="margin: 0 0 15px 0; color: #b8b8b8; font-size: 13px; font-weight: 400; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6;">
                                 Stay updated with today's most important tech and business developments in Sweden. Get a comprehensive overview of the latest news, trends, and updates affecting the Swedish tech ecosystem and startup scene.
@@ -140,8 +160,8 @@
 
                     <!-- Click & Collect Promotion Banner -->
                     <tr>
-                        <td style="padding: 20px 20px 40px 20px; background-color: #1a1a1a;">
-                            <h2 style="margin: 0 0 25px 0; color: #ffffff; font-size: 24px; font-weight: 800; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; text-align: center; line-height: 1.3;">
+                        <td class="mobile-padding" style="padding: 20px 20px 40px 20px; background-color: #1a1a1a;">
+                            <h2 class="promo-title" style="margin: 0 0 25px 0; color: #ffffff; font-size: 24px; font-weight: 800; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; text-align: center; line-height: 1.3;">
                                 Discover Focalpay's new Click & Collect feature
                             </h2>
                             <a href="https://focalpay.se/" target="_blank" rel="noopener noreferrer" style="display: block;">
@@ -152,7 +172,7 @@
 
                     <!-- Footer -->
                     <tr>
-                        <td style="padding: 40px 20px 20px 20px; background-color: #1a1a1a; border-top: 1px solid #333333;">
+                        <td class="mobile-padding" style="padding: 40px 20px 20px 20px; background-color: #1a1a1a; border-top: 1px solid #333333;">
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
                                     <td style="padding-bottom: 20px;">
