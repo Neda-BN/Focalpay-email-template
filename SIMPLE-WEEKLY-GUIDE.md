@@ -29,12 +29,25 @@ From each news article website, collect:
 5. Save it with this **EXACT** name: `News1.png`
 6. Save it **in the same folder** as your email-template.html
 
-#### Repeat for all 3 articles:
+#### Repeat for all 4 articles:
 - Article 1 image → Save as `News1.png`
 - Article 2 image → Save as `News2.png`  
 - Article 3 image → Save as `News3.png`
+- Article 4 image → Save as `News4.png`
 
-💡 **TIP:** Replace the old News1.png, News2.png, News3.png files - just overwrite them!
+⚠️ **IMPORTANT - IMAGE SIZE REQUIREMENT:**
+**ALL news images (News1.png, News2.png, News3.png, News4.png) MUST have the SAME dimensions as News1.png.**
+
+**How to check and resize images:**
+1. **Check News1.png size:** Right-click on News1.png → Get Info (Mac) or Properties (Windows)
+2. Note the dimensions (e.g., 800 x 600 pixels)
+3. **For all other news images:** Make sure they match News1.png dimensions
+4. **To resize images:**
+   - **Mac:** Open image in Preview → Tools → Adjust Size → Enter News1.png dimensions
+   - **Windows:** Open image in Photos → Resize → Enter News1.png dimensions
+   - **Online tool:** Use https://www.iloveimg.com/resize-image (free, no signup needed)
+
+💡 **TIP:** Replace the old News1.png, News2.png, News3.png, News4.png files - just overwrite them!
 
 ---
 
