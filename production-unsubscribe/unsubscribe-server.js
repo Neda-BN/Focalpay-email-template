@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3000;
 const db = knex({
   client: 'sqlite3',
   connection: {
-    filename: './unsubscribe.db'
+    filename: './production.db'
   },
   useNullAsDefault: true
 });
@@ -110,6 +110,13 @@ function checkRateLimit(ip) {
   rateLimitMap.set(ip, requests);
   return true;
 }
+
+// ========================================
+// HEALTH CHECK ENDPOINT
+// ========================================
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok', service: 'unsubscribe', timestamp: new Date().toISOString() });
+});
 
 // ========================================
 // UNSUBSCRIBE ENDPOINT

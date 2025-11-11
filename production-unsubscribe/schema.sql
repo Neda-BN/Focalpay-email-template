@@ -10,11 +10,11 @@ CREATE TABLE IF NOT EXISTS users (
     unsubscribed BOOLEAN DEFAULT 0,
     unsubscribed_at TIMESTAMP NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    
-    INDEX idx_email (email),
-    INDEX idx_unsubscribed (unsubscribed)
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE INDEX IF NOT EXISTS idx_email ON users(email);
+CREATE INDEX IF NOT EXISTS idx_unsubscribed ON users(unsubscribed);
 
 -- Unsubscribe tokens table (optional - for tracking tokens)
 CREATE TABLE IF NOT EXISTS unsubscribe_tokens (
@@ -25,12 +25,12 @@ CREATE TABLE IF NOT EXISTS unsubscribe_tokens (
     used BOOLEAN DEFAULT 0,
     used_at TIMESTAMP NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
-    INDEX idx_token (token),
-    INDEX idx_user_id (user_id),
-    INDEX idx_expires_at (expires_at)
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
+
+CREATE INDEX IF NOT EXISTS idx_token ON unsubscribe_tokens(token);
+CREATE INDEX IF NOT EXISTS idx_tokens_user_id ON unsubscribe_tokens(user_id);
+CREATE INDEX IF NOT EXISTS idx_expires_at ON unsubscribe_tokens(expires_at);
 
 -- Unsubscribe log table (for audit trail)
 CREATE TABLE IF NOT EXISTS unsubscribe_log (
@@ -41,11 +41,11 @@ CREATE TABLE IF NOT EXISTS unsubscribe_log (
     ip_address VARCHAR(45),
     user_agent TEXT,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
-    INDEX idx_user_id (user_id),
-    INDEX idx_timestamp (timestamp)
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
+
+CREATE INDEX IF NOT EXISTS idx_log_user_id ON unsubscribe_log(user_id);
+CREATE INDEX IF NOT EXISTS idx_log_timestamp ON unsubscribe_log(timestamp);
 
 -- ========================================
 -- POSTGRESQL VERSION (if using PostgreSQL)
