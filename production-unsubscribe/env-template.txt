@@ -1,0 +1,42 @@
+# ========================================
+# PRODUCTION ENVIRONMENT VARIABLES
+# ========================================
+# Copy this file to .env and fill in your values
+# NEVER commit .env to version control!
+
+# Server Configuration
+PORT=3000
+NODE_ENV=production
+
+# CRITICAL: Change this to a secure random key!
+# Generate with: node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+UNSUB_SECRET_KEY=CHANGE-THIS-TO-A-SECURE-RANDOM-KEY-32-CHARACTERS-OR-MORE
+
+# Your Domain (where unsubscribe server is hosted)
+DOMAIN=yourdomain.com
+UNSUBSCRIBE_URL=https://yourdomain.com/unsubscribe
+
+# Database Configuration (PostgreSQL recommended for production)
+DB_CLIENT=pg
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=focalpay_production
+DB_USER=your_db_user
+DB_PASSWORD=your_db_password
+
+# Email Service (for sending confirmation emails if needed)
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=your_smtp_username
+SMTP_PASS=your_smtp_password
+FROM_EMAIL=noreply@focalpay.se
+FROM_NAME=Focalpay
+
+# Monitoring & Logging (optional)
+SENTRY_DSN=https://your_sentry_dsn
+LOG_LEVEL=info
+
+# Rate Limiting
+RATE_LIMIT_WINDOW_MS=60000
+RATE_LIMIT_MAX_REQUESTS=10
+

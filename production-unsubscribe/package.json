@@ -1,0 +1,35 @@
+{
+  "name": "unsubscribe-implementation",
+  "version": "1.0.0",
+  "description": "Production-ready unsubscribe system for email marketing",
+  "main": "unsubscribe-server.js",
+  "scripts": {
+    "start": "node unsubscribe-server.js",
+    "dev": "nodemon unsubscribe-server.js",
+    "test": "node test-tokens.js"
+  },
+  "keywords": [
+    "unsubscribe",
+    "email",
+    "marketing",
+    "gdpr",
+    "can-spam"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "knex": "^2.5.1",
+    "sqlite3": "^5.1.6"
+  },
+  "optionalDependencies": {
+    "nodemailer": "^6.9.7",
+    "@sendgrid/mail": "^7.7.0",
+    "aws-sdk": "^2.1480.0",
+    "redis": "^4.6.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+
